@@ -1,5 +1,8 @@
 # Nubank::Ruby
 
+[![Build Status](https://travis-ci.org/alfakini/nubank-ruby.svg?branch=master)](https://travis-ci.org/alfakini/nubank-ruby)
+[![Coverage Status](https://coveralls.io/repos/github/alfakini/nubank-ruby/badge.svg?branch=master)](https://coveralls.io/github/alfakini/nubank-ruby?branch=master)
+
 This gem provides a wrapper to Nubank's public API.
 
 It does not have any official support from Nubank nor is endorsed by them. This code is provided as is, I can't give you any guarantee that Nubank won't change the API calls in the future or you block your access accidentaly by overloading their API.
