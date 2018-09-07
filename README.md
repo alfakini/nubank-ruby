@@ -26,9 +26,47 @@ $ gem install nubank-ruby
 
 ## Usage
 
+tl;dr:
+
 ```ruby
 require 'nubank-ruby'
 nunank = Nubank.new('<CPF></CPF>', '<PASSWORD>')
+nubank.login
+nubank.events # => [{"description":"Táxi do Zé","category":"transaction","amount ...
+nubank.account # => {"payment_method":{"account_id":"<ACCOUNT-ID>","kind":"bolet ...
+nubank.bills_summary # => [{"state":"open","summary":{"payments":"55","interest_ ...
+```
+
+### Login
+
+Autenticates in the service using your cpf and password. Returns the list of account's services available.
+
+```ruby
+nubank = Nubank.new('<CPF>', '<PASSWORD>')
+nubank.login
+```
+
+### Account
+
+Returns account's details like balance, interest rate, cards, payment method and links.
+
+```ruby
+nubank.account
+```
+
+### Bills summary
+
+Returns informations about past, present and future bills.
+
+```ruby
+nubank.bills_summary
+```
+
+### Events feed
+
+The main source of information. Here you will get information about transactions and notifications.
+
+```ruby
 nubank.events
 ```
 
@@ -48,4 +86,4 @@ The gem is available as open source under the terms of the [MIT License](https:/
 
 ## Code of Conduct
 
-Everyone interacting in the Nubank::Ruby project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/alfakini/nubank-ruby/blob/master/CODE_OF_CONDUCT.md).
+Everyone interacting in this gem, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/alfakini/nubank-ruby/blob/master/CODE_OF_CONDUCT.md).
