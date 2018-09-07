@@ -1,0 +1,188 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://prod-s0-webapp-proxy.nubank.com.br/api/discovery
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - nubank-ruby (https://www.github.com/alfakini/nubank-ruby)
+      Origin:
+      - https://conta.nubank.com.br
+      Referer:
+      - https://conta.nubank.com.br
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - https://conta.nubank.com.br
+      Access-Control-Expose-Headers:
+      - Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection,
+        X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy,
+        Content-Type
+      Content-Security-Policy:
+      - 'object-src ''none''; script-src ''unsafe-inline'' ''unsafe-eval'' ''strict-dynamic''
+        https: http:;'
+      Content-Type:
+      - application/json;charset=utf-8
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains
+      Vary:
+      - Accept-Encoding, User-Agent
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - DENY
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Xss-Protection:
+      - 1; mode=block
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"register_prospect_savings_web":"https://prod-s0-webapp-proxy.nubank.com.br/api/proxy/PROXY","register_prospect_savings_mgm":"https://prod-s0-webapp-proxy.nubank.com.br/api/proxy/PROXY","pusher_auth_channel":"https://prod-s0-webapp-proxy.nubank.com.br/api/proxy/PROXY","reset_password":"https://prod-s0-webapp-proxy.nubank.com.br/api/proxy/PROXY","register_prospect":"https://prod-s0-webapp-proxy.nubank.com.br/api/proxy/PROXY","register_prospect_global_web":"https://prod-s0-webapp-proxy.nubank.com.br/api/proxy/PROXY","request_password_reset":"https://prod-s0-webapp-proxy.nubank.com.br/api/proxy/PROXY","auth_gen_certificates":"https://prod-s0-webapp-proxy.nubank.com.br/api/proxy/PROXY","login":"https://prod-s0-webapp-proxy.nubank.com.br/api/proxy/PROXY","auth_device_resend_code":"https://prod-s0-webapp-proxy.nubank.com.br/api/proxy/PROXY"}'
+    http_version:
+  recorded_at: Wed, 05 Sep 2018 02:12:37 GMT
+- request:
+    method: post
+    uri: https://prod-s0-webapp-proxy.nubank.com.br/api/proxy/PROXY
+    body:
+      encoding: UTF-8
+      string: '{"grant_type":"password","login":"<CPF>","password":"<PASSWORD>","client_id":"other.conta","client_secret":"yQPeLzoHuJzlMMSAjC-LgNUJdUecx8XO"}'
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - nubank-ruby (https://www.github.com/alfakini/nubank-ruby)
+      Origin:
+      - https://conta.nubank.com.br
+      Referer:
+      - https://conta.nubank.com.br
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - https://conta.nubank.com.br
+      Access-Control-Expose-Headers:
+      - X-Frame-Options, X-Download-Options, Access-Control-Expose-Headers, X-Permitted-Cross-Domain-Policies,
+        X-Xss-Protection, X-Signature, Content-Type, Access-Control-Allow-Origin,
+        X-Content-Type-Options, X-Download-Options, Strict-Transport-Security, X-Frame-Options,
+        Strict-Transport-Security, X-Permitted-Cross-Domain-Policies, Pragma, X-Content-Type-Options,
+        Content-Security-Policy, Content-Type, X-Xss-Protection, Content-Security-Policy,
+        Cache-Control
+      Cache-Control:
+      - no-store
+      Content-Security-Policy:
+      - 'object-src ''none''; script-src ''unsafe-inline'' ''unsafe-eval'' ''strict-dynamic''
+        https: http:;'
+      Content-Type:
+      - application/json;charset=utf-8
+      Pragma:
+      - no-cache
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - DENY
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Signature:
+      - <X-SIGNATURE>
+      X-Xss-Protection:
+      - 1; mode=block
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"access_token":"<ACCESS-TOKEN>","token_type":"bearer","_links":{"change_password":{"href":"https://prod-s0-webapp-proxy.nubank.com.br/api/proxy/PROXY"},"enabled_features":{"href":"https://prod-s0-webapp-proxy.nubank.com.br/api/proxy/PROXY"},"certificate_status":{"href":"https://prod-s0-webapp-proxy.nubank.com.br/api/proxy/PROXY"},"revoke_token":{"href":"https://prod-s0-webapp-proxy.nubank.com.br/api/proxy/PROXY"},"userinfo":{"href":"https://prod-s0-webapp-proxy.nubank.com.br/api/proxy/PROXY"},"events_page":{"href":"https://prod-s0-webapp-proxy.nubank.com.br/api/proxy/PROXY"},"loginWebapp":{"href":"https://prod-s0-webapp-proxy.nubank.com.br/api/proxy/PROXY"},"dropman":{"href":"https://prod-s0-webapp-proxy.nubank.com.br/api/proxy/PROXY"},"events":{"href":"https://prod-s0-webapp-proxy.nubank.com.br/api/proxy/PROXY"},"faq_push_back_state":{"href":"https://prod-s0-webapp-proxy.nubank.com.br/api/proxy/PROXY"},"register_rewards":{"href":"https://prod-s0-webapp-proxy.nubank.com.br/api/proxy/PROXY"},"login_webapp":{"href":"https://prod-s0-webapp-proxy.nubank.com.br/api/proxy/PROXY"},"postcode":{"href":"https://prod-s0-webapp-proxy.nubank.com.br/api/proxy/PROXY"},"app_flows":{"href":"https://prod-s0-webapp-proxy.nubank.com.br/api/proxy/PROXY"},"rewards_signup_widget":{"href":"https://prod-s0-webapp-proxy.nubank.com.br/api/proxy/PROXY"},"revoke_all":{"href":"https://prod-s0-webapp-proxy.nubank.com.br/api/proxy/PROXY"},"customer":{"href":"https://prod-s0-webapp-proxy.nubank.com.br/api/proxy/PROXY"},"account":{"href":"https://prod-s0-webapp-proxy.nubank.com.br/api/proxy/PROXY"},"bills_summary":{"href":"https://prod-s0-webapp-proxy.nubank.com.br/api/proxy/PROXY"},"features_map":{"href":"https://prod-s0-webapp-proxy.nubank.com.br/api/proxy/PROXY"},"healthcheck":{"href":"https://prod-s0-webapp-proxy.nubank.com.br/api/proxy/PROXY"},"savings_account":{"href":"https://prod-s0-webapp-proxy.nubank.com.br/api/proxy/PROXY"},"rewards_enrollment":{"href":"https://prod-s0-webapp-proxy.nubank.com.br/api/proxy/PROXY"},"purchases":{"href":"https://prod-s0-webapp-proxy.nubank.com.br/api/proxy/PROXY"},"blackmirror":{"href":"https://prod-s0-webapp-proxy.nubank.com.br/api/proxy/PROXY"},"ghostflame":{"href":"https://prod-s0-webapp-proxy.nubank.com.br/api/proxy/PROXY"},"account_simple":{"href":"https://prod-s0-webapp-proxy.nubank.com.br/api/proxy/PROXY"},"shore":{"href":"https://prod-s0-webapp-proxy.nubank.com.br/api/proxy/PROXY"},"user_change_password":{"href":"https://prod-s0-webapp-proxy.nubank.com.br/api/proxy/PROXY"}},"refresh_token":"<REFRESH-TOKEN>","refresh_before":"2018-09-12T16:18:26Z"}'
+    http_version:
+  recorded_at: Wed, 05 Sep 2018 16:18:26 GMT
+- request:
+    method: get
+    uri: https://prod-s0-webapp-proxy.nubank.com.br/api/proxy/PROXY
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - nubank-ruby (https://www.github.com/alfakini/nubank-ruby)
+      Origin:
+      - https://conta.nubank.com.br
+      Referer:
+      - https://conta.nubank.com.br
+      Authorization:
+      - Bearer <ACCESS-KEY>
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - https://conta.nubank.com.br
+      Access-Control-Expose-Headers:
+      - X-Frame-Options, X-Download-Options, Access-Control-Expose-Headers, X-Permitted-Cross-Domain-Policies,
+        X-Xss-Protection, Content-Type, Access-Control-Allow-Origin, X-Content-Type-Options,
+        X-Download-Options, Strict-Transport-Security, X-Frame-Options, Strict-Transport-Security,
+        X-Permitted-Cross-Domain-Policies, X-Content-Type-Options, Content-Security-Policy,
+        Content-Type, Vary, X-Xss-Protection, Content-Security-Policy
+      Content-Security-Policy:
+      - 'object-src ''none''; script-src ''unsafe-inline'' ''unsafe-eval'' ''strict-dynamic''
+        https: http:;'
+      Content-Type:
+      - application/json;charset=utf-8
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains
+      Vary:
+      - Accept-Encoding, User-Agent
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - DENY
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Xss-Protection:
+      - 1; mode=block
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"account":{"payment_method":{"account_id":"<ACCOUNT-ID>","kind":"boleto"},"due_day":55,"product_id":"<PRODUCT-ID>","available_balance":55,"effective_due_date":"<DATE>","temporary_limit_amount":0,"limit_range_min":55,"future_balance":55,"current_interest_rate":"55","precise_credit_limit":"55","next_due_date":"<DATE>","interest_rate":55,"status":"active","id":"<ID>","balances":{"future":55,"open":55,"due":55,"prepaid":55,"available":55},"cards":[{"product_id":"<PRODUCT-ID>","member_since":"<DATE>","type":"<TYPE>","printed_name":"<PRINTED-NAME>","good_through":"<DATE>","status":"active","id":"<ID>","status_detail":"active","card_number":"<CARD-NUMBER>","_links":{"recover_pin":{"href":"https://prod-s0-webapp-proxy.nubank.com.br/api/proxy/PROXY"},"old_recover_pin":{"href":"https://prod-s0-webapp-proxy.nubank.com.br/api/proxy/PROXY"},"unblock":{"href":"https://prod-s0-webapp-proxy.nubank.com.br/api/proxy/PROXY"},"block":{"href":"https://prod-s0-webapp-proxy.nubank.com.br/api/proxy/PROXY"},"tracking":{"href":"https://prod-s0-webapp-proxy.nubank.com.br/api/proxy/PROXY"},"card_tracking":{"href":"https://prod-s0-webapp-proxy.nubank.com.br/api/proxy/PROXY"},"self":{"href":"https://prod-s0-webapp-proxy.nubank.com.br/api/proxy/PROXY"},"unresolved_fraud_denial":{"href":"https://prod-s0-webapp-proxy.nubank.com.br/api/proxy/PROXY"}}}],"net_available":55,"barcode_id":"<BARCODE-ID>","_links":{"one_financing_proposal":{"href":"https://prod-s0-webapp-proxy.nubank.com.br/api/proxy/PROXY"},"payments":{"href":"https://prod-s0-webapp-proxy.nubank.com.br/api/proxy/PROXY"},"payment_method":{"href":"https://prod-s0-webapp-proxy.nubank.com.br/api/proxy/PROXY"},"anticipatable_list":{"href":"https://prod-s0-webapp-proxy.nubank.com.br/api/proxy/PROXY"},"increase_limit_request_realtime":{"href":"https://prod-s0-webapp-proxy.nubank.com.br/api/proxy/PROXY"},"travel_notification":{"href":"https://prod-s0-webapp-proxy.nubank.com.br/api/proxy/PROXY"},"events_page":{"href":"https://prod-s0-webapp-proxy.nubank.com.br/api/proxy/PROXY"},"new_virtual_card":{"href":"https://prod-s0-webapp-proxy.nubank.com.br/api/proxy/PROXY"},"bills_sketch":{"href":"https://prod-s0-webapp-proxy.nubank.com.br/api/proxy/PROXY"},"events":{"href":"https://prod-s0-webapp-proxy.nubank.com.br/api/proxy/PROXY"},"financing_strategies":{"href":"https://prod-s0-webapp-proxy.nubank.com.br/api/proxy/PROXY"},"temporary_limits":{"href":"https://prod-s0-webapp-proxy.nubank.com.br/api/proxy/PROXY"},"rewards_signup_widget":{"href":"https://prod-s0-webapp-proxy.nubank.com.br/api/proxy/PROXY"},"customer":{"href":"https://prod-s0-webapp-proxy.nubank.com.br/api/proxy/PROXY"},"simple_virtual_cards":{"href":"https://prod-s0-webapp-proxy.nubank.com.br/api/proxy/PROXY"},"bills_summary":{"href":"https://prod-s0-webapp-proxy.nubank.com.br/api/proxy/PROXY"},"activate_card":{"href":"https://prod-s0-webapp-proxy.nubank.com.br/api/proxy/PROXY"},"virtual_cards":{"href":"https://prod-s0-webapp-proxy.nubank.com.br/api/proxy/PROXY"},"change_due_day":{"href":"https://prod-s0-webapp-proxy.nubank.com.br/api/proxy/PROXY"},"rewards_enrollment":{"href":"https://prod-s0-webapp-proxy.nubank.com.br/api/proxy/PROXY"},"financing_proposals":{"href":"https://prod-s0-webapp-proxy.nubank.com.br/api/proxy/PROXY"},"feed_banners":{"href":"https://prod-s0-webapp-proxy.nubank.com.br/api/proxy/PROXY"},"admin_change_limit":{"href":"https://prod-s0-webapp-proxy.nubank.com.br/api/proxy/PROXY"},"increase_limit_request":{"href":"https://prod-s0-webapp-proxy.nubank.com.br/api/proxy/PROXY"},"cancel":{"href":"https://prod-s0-webapp-proxy.nubank.com.br/api/proxy/PROXY"},"transactions":{"href":"https://prod-s0-webapp-proxy.nubank.com.br/api/proxy/PROXY"},"change_limit":{"href":"https://prod-s0-webapp-proxy.nubank.com.br/api/proxy/PROXY"},"stats":{"href":"https://prod-s0-webapp-proxy.nubank.com.br/api/proxy/PROXY"},"self":{"href":"https://prod-s0-webapp-proxy.nubank.com.br/api/proxy/PROXY"}},"limit_range_max":55,"next_close_date":"<DATE>","current_balance":55,"created_at":"<DATE>","request_id":"<REQUEST-ID>","customer_id":"<CUSTOMER-ID>","credit_limit":55}}'
+    http_version:
+  recorded_at: Wed, 05 Sep 2018 16:18:27 GMT
+recorded_with: VCR 4.0.0

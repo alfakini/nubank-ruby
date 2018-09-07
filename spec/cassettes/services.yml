@@ -1,0 +1,61 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://prod-s0-webapp-proxy.nubank.com.br/api/discovery
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - nubank-ruby (https://www.github.com/alfakini/nubank-ruby)
+      Origin:
+      - https://conta.nubank.com.br
+      Referer:
+      - https://conta.nubank.com.br
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - https://conta.nubank.com.br
+      Access-Control-Expose-Headers:
+      - Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection,
+        X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy,
+        Content-Type
+      Content-Security-Policy:
+      - 'object-src ''none''; script-src ''unsafe-inline'' ''unsafe-eval'' ''strict-dynamic''
+        https: http:;'
+      Content-Type:
+      - application/json;charset=utf-8
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains
+      Vary:
+      - Accept-Encoding, User-Agent
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - DENY
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Xss-Protection:
+      - 1; mode=block
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"register_prospect_savings_web":"https://prod-s0-webapp-proxy.nubank.com.br/api/proxy/PROXY","register_prospect_savings_mgm":"https://prod-s0-webapp-proxy.nubank.com.br/api/proxy/PROXY","pusher_auth_channel":"https://prod-s0-webapp-proxy.nubank.com.br/api/proxy/PROXY","reset_password":"https://prod-s0-webapp-proxy.nubank.com.br/api/proxy/PROXY","register_prospect":"https://prod-s0-webapp-proxy.nubank.com.br/api/proxy/PROXY","register_prospect_global_web":"https://prod-s0-webapp-proxy.nubank.com.br/api/proxy/PROXY","request_password_reset":"https://prod-s0-webapp-proxy.nubank.com.br/api/proxy/PROXY","auth_gen_certificates":"https://prod-s0-webapp-proxy.nubank.com.br/api/proxy/PROXY","login":"https://prod-s0-webapp-proxy.nubank.com.br/api/proxy/PROXY","auth_device_resend_code":"https://prod-s0-webapp-proxy.nubank.com.br/api/proxy/PROXY"}'
+    http_version:
+  recorded_at: Wed, 05 Sep 2018 02:12:37 GMT
+recorded_with: VCR 4.0.0

@@ -1,0 +1,67 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://prod-s0-webapp-proxy.nubank.com.br/api/proxy/PROXY
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - nubank-ruby (https://www.github.com/alfakini/nubank-ruby)
+      Origin:
+      - https://conta.nubank.com.br
+      Referer:
+      - https://conta.nubank.com.br
+      Authorization:
+      - Bearer <ACCESS-KEY>
+      Content-Length:
+      - '0'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - https://conta.nubank.com.br
+      Access-Control-Expose-Headers:
+      - X-Frame-Options, X-Download-Options, Access-Control-Expose-Headers, X-Permitted-Cross-Domain-Policies,
+        X-Xss-Protection, X-Signature, Access-Control-Allow-Origin, X-Content-Type-Options,
+        X-Download-Options, Strict-Transport-Security, X-Frame-Options, Strict-Transport-Security,
+        X-Permitted-Cross-Domain-Policies, X-Content-Type-Options, Content-Security-Policy,
+        Content-Type, X-Xss-Protection, Content-Security-Policy
+      Content-Security-Policy:
+      - 'object-src ''none''; script-src ''unsafe-inline'' ''unsafe-eval'' ''strict-dynamic''
+        https: http:;'
+      Content-Type:
+      - application/json;charset=utf-8
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - DENY
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Signature:
+      - <X-SIGNATURE>
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '2'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "{}"
+    http_version:
+  recorded_at: Wed, 05 Sep 2018 16:16:48 GMT
+recorded_with: VCR 4.0.0
