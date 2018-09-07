@@ -1,4 +1,4 @@
-# Nubank::Ruby
+# Nubank
 
 [![Build Status](https://travis-ci.org/alfakini/nubank-ruby.svg?branch=master)](https://travis-ci.org/alfakini/nubank-ruby)
 [![Coverage Status](https://coveralls.io/repos/github/alfakini/nubank-ruby/badge.svg?branch=master)](https://coveralls.io/github/alfakini/nubank-ruby?branch=master)
