@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'nubank/version'
 
 Gem::Specification.new do |spec|
-  spec.name = 'nubank-ruby'
+  spec.name = 'nubank'
   spec.version = Nubank::VERSION
   spec.authors = ['Alan R. Fachini']
   spec.email = ['alfakini@gmail.com']

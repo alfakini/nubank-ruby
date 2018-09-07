@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    nubank-ruby (0.1.0)
+    nubank (0.1.0)
       faraday (~> 0.15.2)
 
 GEM
@@ -83,7 +83,7 @@ PLATFORMS
 DEPENDENCIES
   bundler (~> 1.16)
   coveralls (~> 0.8.22)
-  nubank-ruby!
+  nubank!
   pry (~> 0.11.3)
   rake (~> 10.0)
   rspec (~> 3.0)
