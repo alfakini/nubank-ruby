@@ -35,7 +35,7 @@ tl;dr:
 
 ```ruby
 require 'nubank-ruby'
-nunank = Nubank.new('<CPF></CPF>', '<PASSWORD>')
+nunank = Nubank.new('<CPF>', '<PASSWORD>')
 nubank.login
 nubank.events # => [{"description":"Táxi do Zé","category":"transaction","amount ...
 nubank.account # => {"payment_method":{"account_id":"<ACCOUNT-ID>","kind":"bolet ...
