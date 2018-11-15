@@ -14,7 +14,7 @@ It does not have any official support from Nubank nor is endorsed by them. This 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'nubank-ruby'
+gem 'nubank'
 ```
 
 And then execute:
@@ -26,7 +26,7 @@ $ bundle
 Or install it yourself as:
 
 ```sh
-$ gem install nubank-ruby
+$ gem install nubank
 ```
 
 ## Usage
@@ -34,7 +34,7 @@ $ gem install nubank-ruby
 tl;dr:
 
 ```ruby
-require 'nubank-ruby'
+require 'nubank'
 nubank = Nubank.new('<CPF>', '<PASSWORD>')
 nubank.login
 nubank.events # => [{"description":"Táxi do Zé","category":"transaction","amount ...
