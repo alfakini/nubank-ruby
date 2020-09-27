@@ -1,9 +1,11 @@
-# nubank-ruby
+# nubank-ruby (deprecated)
 
 [![Gem Version](https://badge.fury.io/rb/nubank.svg)](https://badge.fury.io/rb/nubank)
 [![Build Status](https://travis-ci.org/alfakini/nubank-ruby.svg?branch=master)](https://travis-ci.org/alfakini/nubank-ruby)
 [![Coverage Status](https://coveralls.io/repos/github/alfakini/nubank-ruby/badge.svg?branch=master)](https://coveralls.io/github/alfakini/nubank-ruby?branch=master)
 [![Maintainability](https://api.codeclimate.com/v1/badges/27524f316fb71a98e522/maintainability)](https://codeclimate.com/github/alfakini/nubank-ruby/maintainability)
+
+`deprecation note`: Nubank now has an option that lets you export CSV files that solves the same problem that made me create this gem.
 
 This gem provides a wrapper to Nubank's public API.
 
